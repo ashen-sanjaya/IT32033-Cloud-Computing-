@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting Page</title>
+</head>
+<body>
+  <h1>Hello JavaScript!</h1>
+
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" placeholder="Your name">
+  <button onclick="sayHello()">Say Hello</button>
+
+  <p id="greetingMessage"></p>
+
+  <script>
+    function sayHello() {
+      const name = document.getElementById("nameInput").value;
+      const message = "Hello, " + name + "! 👋";
+      document.getElementById("greetingMessage").innerText = message;
+    }
+  </script>
+</body>
+</html>
